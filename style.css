@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.title{
+    padding-left: 5px;
+    font-size: 25px;
+}
+.navbar ul{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.navbar ul a{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+    margin: 13px;
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: border;
+    transition-duration: 300s;
+    /* border-bottom: 1px solid black; */
+}
+
+.navbar ul a:hover{
+    color: rgb(14, 143, 212);
+    border-bottom: 2px solid black;
+
+}
+.room{
+    margin-top: 13px;
+}
+.dropdown li{
+    list-style: none;
+   display: none;
+
+}
+.rm ul li:hover .dropdown li {
+    display: block;
+    
+
+}
+/* .room a:hover.dropdown li{
+    display: block;
+    position: absolute;                                 
+
+} */
+
+.btn{
+  
+    
+        font-size: 18px;
+        font-weight: bold;
+        width: 113px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: black ;
+        color: white;
+        cursor: pointer;
+        margin-left: 5px;
+    
+    
+}
+.grid-box::before{
+  
+    content: "";
+    background-color: rgb(85, 203, 227);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.50;
+    top: 0;
+    border-radius: 3%;
+    
+}
+.grid-box{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 190px 4fr 130px;
+    /* border: 2px solid black; */
+    align-items: center;
+    height: 46px;   
+    /* width: auto; */
+    position: relative;
+    z-index: 1;
+    
+}
+.whole-grid{
+    display: grid;
+    grid-template-areas: 
+    'grid-box grid-box grid-box '
+    'f-section f-section f-section'
+    's-section s-section s-section'
+    't-section t-section t-section'
+    'footer footer footer';
+
+    grid-auto-flow: row;
+    
+}
+.grid-box{
+    grid-area: grid-box;
+    
+}
+.f-section{
+    grid-area: f-section;
+    /* border: 2px solid black; */
+    height: 490px;
+    background: url('image/hotels/mou.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h-name {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+}
+.f-section h1{
+    font-size: 57px;
+    margin-top: 190px;
+}
+.f-section p{
+    font-size: 16px;
+    
+}
+.join::before{
+  
+    content: "";
+    background-color: aliceblue;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.30;
+    top: 0;
+    border-radius: 3%;
+}
+.join{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 128px;
+    margin-left: 300px;
+    margin-right: 300px;
+    height: 58px;
+    position: relative;
+    z-index: 1;
+}
+.join input{
+    margin: 4px;
+    width: 189px;
+    height: 36px;
+}
+.guest{
+    width: 204px;
+    height: 40px;
+}
+.bt{
+    font-size: 15px;
+    width: 204px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: black ;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+/* ----------------second sectino ------------------------ */
+.s-section{
+    display: grid;
+    grid-area: s-section;
+    /* border: 2px solid black; */
+    
+}
+.s-grid{
+    margin: 100px;
+    /* padding: 30px; */
+    /* border: 3px solid black; */
+}
+.city-wrap{
+    margin-top: 7px;
+    display: flex;
+    
+}
+.cities{
+    margin: 5px;
+    border-radius: 7px;
+}
+.cities img{
+    border-radius: 7px;
+}
+.cities a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.gap{
+    margin-top: 38px;
+}
+
+
+/* ----------------third sectino ------------------------ */
+.t-section{
+    display: grid;
+    grid-area: t-section;
+    border: 2px solid black;
+    
+}
+.t-grid{
+    margin: 100px;
+    /* padding: 30px; */
+    /* border: 3px solid black; */
+}
+.review{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.color{
+    margin-right: 5px;
+    background-color: rgb(6, 61, 123);
+    color: white;
+    padding: 5px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.hotel-wrap{
+    display: flex;
+}
+
+.hotels{
+    
+        margin: 5px;
+        border-radius: 7px;
+        border: 1px solid gainsboro;
+    
+}
+.hotels a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.bttn{
+    background-color: white;
+    width: 400px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid rgb(16, 145, 220);
+    color: rgb(16, 145, 220);
+}
+#btns{
+    margin-top: 19px;
+    background-color: white;
+    width: 400px;
+    height: 40px;
+    cursor: pointer;
+    border: 1px solid rgb(16, 145, 220);
+    color: rgb(16, 145, 220);
+
+}
+
+.flexbox{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    border: 1px solid red;
+    flex-wrap:wrap;
+}
+
+.box{
+    min-width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: black;
+    grid-area: footer;
+    border: 2px solid black;
+    text-align: center;
+    color: white;
+}

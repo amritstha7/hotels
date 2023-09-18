@@ -1,14 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hotels Nepal</title>
+    <link rel="stylesheet" href="style.css ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max width: )" href="phone.css">
 </head>
+
 <body>
-    <div>
-        <h2>hello world</h2>
+    <div class="whole-grid">
+        <div class="grid-box">
+            <!-- <div class="logo"><img src="image/logo/1859-modified.png" width="44px" alt=""></div> -->
+
+            <div class="title">
+                <h3>Hotels Nepal</h3>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <a href="#">HOME</a>
+                    <a href="#">ABOUT US</a>
+                    <a href="#">GALARY</a>
+                    <a href="#">PLACES TO EAT</a>
+                    <div class="room">
+                        <a class="rm" href="#">ROOMS</a>
+                        <ul class="dropdown">
+                            <li>html</li>
+                            <li>css</li>
+                            <li>java</li>
+                        </ul>
+                    </div>
+
+                    <a href="#">CONTACT US</a>
+                    <a href="#">MORE</a>
+                </ul>
+            </div>
+
+            <div><button class="btn">Book Now</button></div>
+        </div>
+
+        <section class="f-section">
+            <div class="h-name">
+                <h1>HOTELS NEPAL</h1>
+                <p>YOUR JOURNEY STARTS HERE</p>
+            </div>
+
+            <div class="join">
+                <input type="date" id="Arrival" placeholder="arrival">
+                <input type="date" id="Departure" placeholder="Departure">
+
+                <label for="guest">
+                    <select name="guest" class="guest">
+                        <option value="guest">guest 1</option>
+                        <option value="guest">guest 2</option>
+                        <option value="guest">guest 3</option>
+                        <option value="guest">guest 4</option>
+                        <option value="guest">guest 5</option>
+                        <option value="guest">guest 5 or more</option>
+
+                    </select>
+                </label>
+                <div><button class="bt">Book Now</button></div>
+            </div>
+
+
+        </section>
+        <section class="s-section">
+            <div class="s-grid">
+                <div class="gap">
+                    <h3>Top picks for hotels in Nepal</h3>
+                    <p>Try one of these popular and highly-rated Nepal hotels</p>
+                </div>
+
+                <div class="city-wrap">
+                    <div class="cities">
+                        <img src="image/hotels/bhaktapur1_20180710001255.jpg" width="300px" alt="">
+                        <div class="bkt">
+                            <a href="#">Bhaktapur</a>
+                            <p>Temples, Old Town, History</p>
+                            <h4>37 hotels</h4>
+                        </div>
+                    </div>
+
+                    <div class="cities">
+                        <img src="image/hotels/Panch_Pokhari_20180710001120.jpg " height="178px" width="300px" alt="">
+                        <div class="bkt">
+                            <a href="#">Panch Pokhari</a>
+                            <p> Bhotang, Sindhupalchowk District</p>
+                            <h4>9 hotels</h4>
+                        </div>
+                    </div>
+
+                    <div class="cities">
+                        <img src="image/hotels/phoksundo-lake-trek1_20180710001114.jpg" height="178px" width="300px"
+                            alt="">
+                        <div class="bkt">
+                            <a href="#">Shey Phoksundo Lake</a>
+                            <p>Dolpo District, Nepal</p>
+                            <h4>7 hotels</h4>
+                        </div>
+                    </div>
+
+                    <div class="cities">
+                        <img src="image/hotels/upper-mustang1_20180710001157.jpg" height="178px" width="300px" alt="">
+                        <a href="#">Upper Mustang</a>
+                        <p>Dhawalagiri zone, northern Nepal</p>
+                        <h4>12 hotels</h4>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="gap">
+                    <h3>Hotels in the most popular regions in Nepal</h3>
+                    <p>Discover Nepal by exploring its top regions</p>
+                </div>
+                <div class="cities">
+                    <img src="image/hotels/ktm.jpg" height="178px" width="300px" alt="">
+                    <div class="bkt">
+                        <a href="#">Kathmandu Valley</a>
+                        <p>1582 Hotels</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------third section------------------- -->
+            <!-- ------------------------------third section------------------- -->
+        </section>
+        <section class="t-section">
+            <div class="t-grid">
+                <div class="t-title">
+                    <h3>Hotels in Nepal near popular landmarks</h3>
+                </div>
+                <p>Pick your point of interest and find a hotel nearby</p>
+
+                <div class="hotel-wrap">
+                    <div class="hotels">
+                        <img src="image/hotels2/3.jpeg" width="400px" height="280px" alt="">
+                        <div class="bkt">
+                            <a href="#">Madhuban Hotel</a>
+                            <p>Hotel in Kathmandu</p>
+
+                            <div class="review">
+                                <p class="color">9.2</p>
+                                <p>wonderful</p>
+                                <p>.153reviwes</p>
+                            </div>
+                            <br>
+                            <p>
+                                Located in Kathmandu, Madhuban Hotel offers 3-star accommodations with a terrace and a
+                                restaurant.
+                            </p>
+
+                        </div>
+                        <div><button id="btns">Reserve this hotel</button></div>
+                    </div>
+
+                    <div class="hotels">
+                        <img src="image/hotels2/2.jpeg" width="400px" height="280px" alt="">
+                        <div class="bkt">
+                            <a href="#">Kathmandu Aagantuk Hotel</a>
+                            <p>Hotel in Thamel, Kathmandu</p>
+
+                            <div class="review">
+                                <p class="color">9.2</p>
+                                <p>wonderful</p>
+                                <p>.1090reviwes</p>
+                            </div>
+
+                            <br>
+                            <p>Well set in Kathmandu, Kathmandu Aagantuk Hotel provides air-conditioned rooms with free
+                                WiFi, free private parking and room service. </p>
+
+                        </div>
+                        <div><button class="bttn">Reserve this hotel</button></div>
+                    </div>
+                    <div class="hotels">
+                        <img src="image/hotels2/4.jpeg" width="400px" height="280px" alt="">
+                        <div class="bkt">
+                            <a href="#">Everest Boutique Hotel</a>
+                            <p>Hotel in Thamel, Kathmandu</p>
+
+                            <div class="review">
+                                <p class="color">9.2</p>
+                                <p>Exceptional</p>
+                                <p>.1090reviwes</p>
+                            </div>
+                            <br>
+                            <p>Located in Kathmandu, 1.1 miles from Swayambhu, Everest Boutique Hotel has accommodations
+                                with a fitness center, private parking, a terrace and a restaurant. </p>
+
+                        </div>
+                        <div><button class="bttn">Reserve this hotel</button></div>
+                    </div>
+
+
+
+
+
+
+                </div>
+            </div>
+          
+            
+        </section>
+      
+        <footer> Copyright@2023 AmritShrestha</footer>
     </div>
-    
+    <div class="flexbox">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
 </body>
-</html>
+
+</html>. 
